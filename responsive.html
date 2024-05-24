@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/boostrap/3.4.1/css/boostrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/boostrap/3.4.1/css/boostrap.min.css"></script>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .column{
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        .row::after{
+            content: "";
+            clear:both;
+            display: table;
+        }
+    </style>
+</head>
+<body style="background-color: aquamarine;">
+    <h1 align="center">Responsive Image and Html</h1>
+    <div class="row">
+        <div class="column">
+            <img src="https://images.pexels.com/photos/3687770/pexels-photo-3687770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="snow" style="width:60%" class="img-responsive img-rounded">
+        </div>
+        <div class="column">
+            <img src="https://images.pexels.com/photos/4588052/pexels-photo-4588052.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="snow1" style="width:100%" class="img-responsive img-circle">
+        </div>
+        <div>
+            <img src="https://images.pexels.com/photos/895259/pexels-photo-895259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="snow2" style="width:60%" class="img-responsive img-thumbnail">
+        </div>
+    </div>
+    <br><br><br>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe src="https://www.youtube.com/watch?v=A1XlIDDXgwg&list=PLrjkTql3jnm8d1ddpVKifXO_fPjSKATCp&index=10" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+</body>
+</html>
